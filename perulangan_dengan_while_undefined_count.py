@@ -1,23 +1,23 @@
-jumlah_buku = 10
+book_count = 10
 
 print('Ibu: "Baca semua bukumu sampai paham!"')
 
-Jumlah_baca_paham = 0
-jumlah_baca = 0
-print(f"Jumlah buku yang harus di baca {jumlah_buku}")
-print(f"Jumlah buku yang sudah di baca dan dipahami {Jumlah_baca_paham}")
+understood_count = 0
+read_count = 0
+print(f"Jumlah buku yang harus di baca {book_count}")
+print(f"Jumlah buku yang sudah di baca dan dipahami {understood_count}")
 
-while jumlah_baca < jumlah_buku * 2:
-    jumlah_baca = jumlah_baca + 1
-    if Jumlah_baca_paham == 3:
-        print(f"Buku ke {Jumlah_baca_paham + 1} belum paham")
+while read_count < book_count * 2:
+    read_count = read_count + 1
+    if understood_count == 3:
+        print(f"Buku ke {understood_count + 1} belum paham")
     else:
-        Jumlah_baca_paham = Jumlah_baca_paham + 1
-        print(f"Buku ke {Jumlah_baca_paham} Sudah dibaca dan dipahami")
+        understood_count = understood_count + 1
+        print(f"Buku ke {understood_count} Sudah dibaca dan dipahami")
 
 
-print(f"Jumlah buku yang sudah dibaca {Jumlah_baca_paham + 1} dan yang dipahami {Jumlah_baca_paham} buku")
-if Jumlah_baca_paham == jumlah_buku:
+print(f"Jumlah buku yang sudah dibaca {understood_count + 1} dan yang dipahami {understood_count} buku")
+if understood_count == book_count:
     print('"Bu, semua buku sudah dibaca dan dipahami')
 else:
-    print(f'"Bu, Tidak semua buku bisa di pahami, budi hanya paham {Jumlah_baca_paham} buku')
+    print(f'"Bu, Tidak semua buku bisa di pahami, budi hanya paham {understood_count} buku')
